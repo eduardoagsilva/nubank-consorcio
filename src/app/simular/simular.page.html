@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Simular</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<div class="simular-titulo">
+  <h3><b>Como quer simular o valor do seu consorcio?</b></h3>
+</div>
+
+<div class="simular-titulo">
+  Escolha uma das opções e informe o valor correspondente.
+</div>
+
+<div class="simular-preferencia-titulo simular-titulo">
+  Como prefere simular?
+</div>
+
+<ion-list class="radio-list">
+  <ion-radio-group (ionChange)="mcqAnswer($event)" >
+    <ion-item>
+      <ion-label>Valor do crédito</ion-label>
+      <ion-radio  slot="start" value="credito" checked="true"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Valor da parcela</ion-label>
+      <ion-radio slot="start" value="parcelas"></ion-radio>
+    </ion-item>
+
+  </ion-radio-group>
+</ion-list>
+
+
+<div *ngIf="hideMe" class="input-label-valor">Digite um valor entre R$ {{  valorMin }} e R$ {{  valorMax }}</div>
+
+<ion-item *ngIf="hideMe" class="input-valor">
+  <ion-label class="input-label-RS" position="fixed">R$ </ion-label>
+  <ion-input type="number" required min="2" max="10" placeholder="Digite um valor"></ion-input>
+</ion-item>
+
+<ion-button *ngIf="hideMe" expand="block" class="opcoes-button"  (click)="openDetails()">
+    ver opções
+  </ion-button>
+</ion-content>

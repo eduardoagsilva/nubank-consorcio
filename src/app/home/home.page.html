@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Consórcio Nubank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+ <ion-content>
+
+  <div class='consorcio-title'>
+    <h5><b>Escolha um para simular</b> </h5>
+  </div>
+
+  <ion-item button (click)="openDetailsCarros()">
+  <ion-icon name="car-outline" slot="start"></ion-icon>
+    <ion-label>
+      <h3>Automóveis</h3>
+      <p>carros</p>
+    </ion-label>
+  </ion-item>
+
+   <ion-item button (click)="openDetailsPesados()">
+  <ion-icon name="bus-outline" slot="start"></ion-icon>
+    <ion-label>
+      <h3>Veículos Pesados</h3>
+      <p>caminhões, ônibus, carretas</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="openDetailsMotos()">
+  <ion-icon name="bicycle-outline" slot="start"></ion-icon>
+    <ion-label>
+      <h3>Motos</h3>
+      <p>iguais ou acima de 150 cilindradas</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="openDetailsImoveis()">
+  <ion-icon name="home-outline" slot="start"></ion-icon>
+    <ion-label>
+      <h3>Imóveis</h3>
+      <p>casa, apartamento, terreno</p>
+    </ion-label>
+  </ion-item>
+
+  <div class='consorcio-title consorcio-pessoal'>
+    <h5><b>Seu consórcio</b> </h5>
+  </div>
+
+  <ion-item button >
+  <ion-icon name="cash-outline" slot="start"></ion-icon>
+    <ion-label>
+      <h3>Dar lance</h3>
+    </ion-label>
+  </ion-item>
+
+  <ion-item button >
+  <ion-icon name="barcode-outline" slot="start"></ion-icon>
+    <ion-label>
+      <h3>Pagar parcelas</h3>
+    </ion-label>
+  </ion-item>
+
+  <ion-item button >
+  <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+    <ion-label>
+      <h3>Ver meu consórcio</h3>
+    </ion-label>
+  </ion-item>
+
+  <ion-item button >
+  <ion-icon name="backspace-outline" slot="start"></ion-icon>
+    <ion-label>
+      <h3>Cancelar consórcio</h3>
+    </ion-label>
+  </ion-item>
+
+</ion-content>

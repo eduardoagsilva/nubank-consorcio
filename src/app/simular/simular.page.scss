@@ -1,0 +1,42 @@
+.simular-titulo {
+    padding: 10px;
+}
+
+.simular-preferencia-titulo {
+    color: #8f8f8f;
+}
+
+.radio-list {
+    padding-top: 10px;
+}
+
+.input-label-valor {
+    padding-top: 20px;
+    padding-left: 10px;
+    color: #8f8f8f;
+    font-size: smaller;
+}
+
+.label-fixed {
+    flex: 0 0 30px!important;
+    min-width: 0px;
+}
+
+.opcoes-button {
+    margin: 20px;
+    --ion-color-primary: #7f08c9;
+    --background-activated: #6907a6;
+}
+
+ion-back-button {
+    color: #7f08c9;
+    --background-activated: #7f08c9;
+}
+
+ion-radio {
+    --color-checked: #7f08c9;
+}
+
+ion-title {
+    color: #7f08c9;
+}

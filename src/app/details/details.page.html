@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Consórcios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card *ngFor="let i of data.consorcios">
+  <ion-card-header>
+      <ion-card-subtitle>Valor do Credito:</ion-card-subtitle>
+      <ion-card-title>R$ {{  i.valorTotal }}</ion-card-title>
+    </ion-card-header>
+  <ion-card-content>
+    <div>
+      <b>{{  i.parcelas }} </b>parcelas de <b>R$ {{  i.valorParcelas }}</b>
+    </div>
+    <div>
+      Taxa de administração: <b>{{  i.taxa }}</b>
+    </div>
+    <ion-button expand="block" class="consorcio-button">
+        quero este
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+
+</ion-content>
+
+
